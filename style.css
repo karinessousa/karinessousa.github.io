@@ -1,0 +1,41 @@
+body {
+    background: url("img/bg.png");
+    background-attachment: fixed;
+    margin: 0 15%
+}
+
+div {
+    border: solid #fff 0px;
+    background-color: #000;
+}
+
+#header {
+    border-bottom-right-radius: 180px;
+    border-bottom-left-radius: 180px;
+    font-family: hazel,arial;
+    font-size: 100px;
+    color: #fff;
+    padding: 30px 10px;
+}
+
+.conteudo {
+    padding: 3%;
+    margin: 3% 7%;
+    border-radius: 30px;
+}
+
+h1 {
+    float: left;
+    color: #fff;
+    font-family: Arial;
+    font-kerning: normal;
+}
+
+hr {
+    color: #fff;
+}
+
+@font-face {
+    font-family: hazel;
+    src: url('font/hazel\ grace.ttf');
+}
