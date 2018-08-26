@@ -1,7 +1,3 @@
-* {
-    cursor: url("img/mario\ do\ super\ mario\ bros\ 3.cur"), default;
-}
-
 body {
     background: url("img/bg.png");
     background-attachment: fixed;
@@ -41,11 +37,6 @@ hr {
 
 a {
     text-decoration: none;
-}
-
-a :hover {
-    text-decoration: none;
-    cursor: url("img/Mario\ Point.cur"), default;
 }
 
 @font-face {
