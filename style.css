@@ -1,3 +1,7 @@
+* {
+    cursor: url("img/mario\ do\ super\ mario\ bros\ 3.cur"), default;
+}
+
 body {
     background: url("img/bg.png");
     background-attachment: fixed;
@@ -13,7 +17,7 @@ div {
     border-bottom-right-radius: 180px;
     border-bottom-left-radius: 180px;
     font-family: hazel,arial;
-    font-size: 100px;
+    font-size: 600%;
     color: #fff;
     padding: 30px 10px;
 }
@@ -33,6 +37,15 @@ h1 {
 
 hr {
     color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    text-decoration: none;
+    cursor: url("img/Mario\ Point.cur"), default;
 }
 
 @font-face {
