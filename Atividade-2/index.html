@@ -14,16 +14,28 @@
                 font-family: roboto;
                 text-align: justify;
             }
-
+            a {
+                text-decoration: none;
+            }
             header {
+                padding: 3%;
+            }
+            header a {
                 color: rgb(243, 189, 222);
                 font-family: signatra, arial;
                 font-size: 600%;
-                padding: 3%;
             }
             nav {
-                padding: 1.5%;
+                padding: 0.1% 1.5%;
                 background: rgb(231, 199, 226);
+            }
+            li {
+                display: inline;
+                margin-left: 2.5%;
+                font-family: roboto;
+            }
+            li:hover {
+                background: rgb(243, 189, 222);
             }
             section {
                 padding: 2% 4%;
@@ -31,6 +43,16 @@
                 float: left;
                 width: 57%;
                 margin-top: 2%;
+            }
+            article {
+                padding: 2% 4%;
+                background: rgb(231, 199, 226);
+                float: left;
+                width: 57%;
+                margin-top: 2%;
+            }
+            #boneco {
+                height: 200px;
             }
             aside {
                 padding: 1.5%;
@@ -64,12 +86,20 @@
     <body>
         <header>
             <center>
-                Princesa Pop
+                <a href="index.html">Princesa Pop</a>
             </center>
         </header>
         
         <nav>
-            fghhtrhtrhth
+           <ul>
+                <a href="index.html"><li>Home</li></a>
+                <li>Ada Lovelace</li>
+                <li>Grace Hopper</li>
+                <li>Hedy Lamarr</li>
+                <li>Radia Perlman</li>
+                <li>Susan Kare</li>
+                <li>Marissa Mayer</li>
+            </ul>
         </nav>
         
         <section>
@@ -93,11 +123,7 @@
             <p>A tão necessária e amada conexão sem fio não seria como 
                 é hoje se não fosse a invenção primordial de uma mulher.</p>
         </section>
-        
-        <article>
-            
-        </article>
-        
+
         <aside>
             <center><img src="perfil.jpg"></center>
             <br>
@@ -109,6 +135,25 @@
                 em nuvem.</b>
             </p>
         </aside>
+        
+        <article>
+            
+        </article>
+        <article>
+
+        </article>
+        <article>
+            <svg width="100" height="100" id="boneco">
+                <circle cx="40" cy="40" r="30" stroke="DeepPink" stroke-width="2" fill="pink" />
+                <line x1="40" y1="70" x2="40" y2="150" style="stroke:deeppink;stroke-width:2" />
+                
+                <line x1="-5" y1="110" x2="39" y2="80" style="stroke:deeppink;stroke-width:2" />
+                <line x1="85" y1="110" x2="39" y2="80" style="stroke:deeppink;stroke-width:2" />
+            
+                <line x1="10" y1="190" x2="39" y2="149" style="stroke:deeppink;stroke-width:2" />
+                <line x1="70" y1="190" x2="39" y2="149" style="stroke:deeppink;stroke-width:2" />
+            </svg>
+        </article>
         
         <footer>
             fghhtrhtrhth
