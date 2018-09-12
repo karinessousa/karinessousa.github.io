@@ -1,0 +1,92 @@
+body {
+    background-image: url('bg.png');
+    background-size: 6%;
+    background-attachment: fixed;
+    padding: 0px 15%;
+}
+p {
+    font-family: roboto;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+}
+header {
+    padding: 3%;
+}
+header a {
+    color: rgb(243, 189, 222);
+    font-family: signatra, arial;
+    text-shadow: 2px 5px 5px #000;
+    font-size: 600%;
+}
+nav {
+    padding: 0.1% 1.5%;
+    background: rgb(231, 199, 226);
+    border: dotted deeppink 2px;
+}
+li {
+    display: inline;
+    margin-left: 2.5%;
+    font-family: roboto;
+}
+li:hover {
+    background: rgb(243, 189, 222);
+}
+h1:hover {
+    text-decoration: underline;
+}
+h2,h3 {
+    font-size:3ex;
+}
+article {
+    padding: 2% 4%;
+    background: rgb(231, 199, 226);
+    float: left;
+    width: 57%;
+    margin-top: 2%;
+    border: ridge rgb(211, 17, 120) 2px;
+}
+#boneco {
+    height: 30vh;
+    : center;
+}
+aside {
+    padding: 1.5%;
+    float: right;
+    background: rgb(231, 199, 226);;
+    width: 30%;
+    margin-top: 2%;
+    border: outset rgb(240, 104, 176) 2px;
+}
+aside img {
+    border-radius: 50%;
+}
+
+.minhaclasse {
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+footer {
+    padding: 1.5%;
+    float: left;
+    margin-top: 0.5cm;
+    background: rgb(231, 199, 226);
+    width: 100%;
+    border: outset rgb(240, 104, 176) 2px;
+}
+#conq {
+    color: red;
+    text-align: center;
+}
+
+@font-face {
+    font-family: signatra;
+    src: url('font/Signatra.ttf');
+}
+@font-face {
+    font-family: roboto;
+    src: url('font/Roboto-Light.ttf');
+}
