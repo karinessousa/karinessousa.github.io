@@ -1,0 +1,159 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(243, 237, 237);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#header {
+    background-color: #fff;
+    padding: 1.4em 1em 0em 1em;
+    overflow: hidden;
+}
+
+#logo {
+    height: 2.6em;
+}
+
+#texto-topo {
+    letter-spacing: 0.2em;
+    padding-top: 0.7em;
+    float: right;
+}
+
+#navegador {
+    background-color: rgb(79, 184, 101);
+    margin: 0em;
+    padding-bottom: 0em;
+    color: #fff;
+    box-shadow: 0em 0.2em 0.5em rgb(87, 87, 87);
+    overflow: hidden;
+}
+
+#navegador ul {
+    list-style-type: none;
+}
+
+#navegador .dropdown .dropoptions {
+    background: rgb(226, 228, 229);
+    color: black;
+    position: absolute;
+    display: none;
+    width: 15em;
+    padding: 5px;
+    overflow: hidden;
+    top: 19.4%;
+    left:0;
+}
+
+#navegador .dropdown .dropoptions ul li a{
+    color: black !important;
+    padding: 0.5em;
+    font-family: arial;
+    display: block;
+}
+
+#navegador .dropdown:hover .dropoptions {
+    display: block;
+}
+
+#navegador .dropdown .dropbutton {
+    cursor: pointer;
+}
+
+#navegador .dropdown {
+    float: left;
+}
+
+#navegador .submenu {
+    float: left;
+    list-style-type: none;
+    padding: 1em 1em;
+    letter-spacing: 0.2em;
+}
+
+#navegador .submenu:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#navegador ul li a:hover, .dropdown .dropbutton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#navegador ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 1em 1.5em;
+}
+
+#navegador .menu .submenu .dropdown .dropoptions{
+    text-decoration: none;
+    color: black;
+}
+
+#navegador ul #pesquisar {
+    float: right;
+    font-family: heydings;
+    font-size: 1.05em;
+    padding-bottom: 0px;
+}
+
+#navegador ul #globo {
+    float: right;
+    font-family: globe;
+    font-size: 1.05em;
+}
+
+#aside{
+    box-shadow: 0.2em 0em 0.5em rgb(87, 87, 87);
+    padding-top: 1.5em;
+    width: 15em;
+}
+
+#aside a {
+    text-decoration: none;
+    color: #000;
+}
+
+#aside li {
+    list-style: none;
+    padding: 0.2em 1.5em;
+}
+
+#aside li:hover {
+    background: #ccc;
+}
+
+#aside ol {
+    padding-left: 0em;
+    position: relative;
+}
+
+#aside h2{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SegoiUI;
+    src: url('Segoi UI.ttf');
+}
+
+@font-face {
+    font-family: heydings;
+    src: url('heydings_icons.ttf');
+}
+
+@font-face {
+    font-family: globe;
+    src: url('Globe\ Icons.ttf');
+}
