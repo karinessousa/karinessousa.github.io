@@ -1,0 +1,216 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url("img/bg.jpg");
+    background-position-y: 10%;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: arial;
+}
+
+.navegador-superior{
+    background-color: rgb(209, 22, 109);
+    overflow: hidden;
+    color: white;
+    box-shadow: 1px 0 9px black;
+}
+
+.navegador-superior ul{
+    list-style-type: none;
+}
+
+.navegador-superior ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    float: left;
+    padding: 8px;
+}
+.navegador-superior ul li a:hover, .dropdown .dropdown-button:hover, .dropdown:hover .dropdown-button{
+    background-color: rgb(219, 130, 185);
+    color: black;
+}
+.dropdown{
+    float: left;
+}
+.dropdown .dropdown-button{
+    padding: 1em 3em;
+    cursor: pointer;
+}
+.dropdown .dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: rgb(219, 130, 185);
+    overflow: hidden;
+    transition: max-height 500ms linear;
+}
+ .dropdown-button:hover + .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+#cabecalho{
+    border-bottom: solid rgb(209, 22, 109) 1em;
+    border-radius:0px 0px 2em 2em;
+    background-color: #31dabe;
+}
+
+#cabecalho #titulo {
+    font-family: candyPop;
+    font-size: 3em;
+    text-align: center;
+    margin: 1em;
+    user-select: none;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#content #aside {
+    border-radius: 10px;
+    margin: 30px;
+    width: 20%;
+    float: left;
+    padding-top: 2em;
+    text-align: justify;
+    background: linear-gradient(#61ecd5, #2ead98);
+    box-shadow: 0px 0px 30px black;
+}
+
+#aside a {
+    text-decoration: none;
+    color: #000;
+}
+
+#aside li {
+    list-style: none;
+    padding: 0.5em 1.5em;
+}
+
+#aside li:hover {
+    background: #ccc;
+}
+
+#aside ol {
+    padding-left: 0em;
+    position: relative;
+}
+
+#aside h2{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    font-weight: normal;
+}
+
+#content #corpo {
+    float: left;
+    margin-top: 30px;
+    width: 40%;
+    height: 35em;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 2em;
+    background: linear-gradient(#61ecd5, #2ead98);
+}
+
+#content #corpo img{
+    animation-name: luffy;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes luffy {
+    0% {
+        transform: translate(40px, 40px)
+        rotate(0deg);
+    }
+    25%{
+        transform: translate(200px, 100px)
+        rotate(90deg);
+    }
+    50% {
+        transform: translate(250px, 300px)
+        rotate(180deg);
+    }
+    75% {
+        transform: translate(80px, 300px)
+        rotate(260deg);
+    }
+    100% {
+        transform: translate(40px, 40px)
+        rotate(360);
+    }
+}
+
+#content #infodireita {
+    border-radius: 10px;
+    margin: 30px;
+    width: 20%;
+    float: left;
+    padding: 2em;
+    text-align: justify;
+    background: linear-gradient(#61ecd5, #2ead98);
+    box-shadow: 0px 0px 30px black;
+}
+
+#rodape {
+    border-top: solid rgb(209, 22, 109) 1em;
+    height: 2em;
+    font-size: 1em;
+    margin-top: 30px;
+    text-align: center;
+    padding: 2em;
+    background-color: #31dabe;
+}
+
+@font-face{
+    font-family: candyPop;
+    src: url("font/Candy_Pop!.ttf");
+}
+
+@media only screen and (max-width: 600px){
+    #content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div {
+        display: block;
+    }
+    
+    #content #aside {
+        width: 90%;
+    }
+
+    #content #corpo {
+        width: 28em;
+        height: 25em;
+    }
+
+    #content #corpo img{
+        width: 4em;
+    }
+
+    #content #infodireita {
+        border-radius: 10px;
+        margin: 30px;
+        width: auto;
+        display: block;
+        overflow: hidden;
+        float: none;
+        padding: 2em;
+        text-align: justify;
+        background: linear-gradient(#61ecd5, #2ead98);
+        box-shadow: 0px 0px 30px black;
+    } */
+}

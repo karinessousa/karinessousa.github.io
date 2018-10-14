@@ -1,79 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .navegador-superior{
-            background-color: rgb(150,150,150);
-            overflow: hidden;
-        }
-        .container{
-            background-color: rgb(200, 200, 200);
-        }
-        .navegador-superior ul{
-            list-style-type: none;
-        }
-        .navegador-superior ul li a{
-            text-decoration: none;
-            color: black;
-            display: block;
-            float: left;
-            padding: 8px;
-        }
-        .navegador-superior ul li a:hover, .dropdown .dropdown-button:hover, .dropdown:hover .dropdown-button{
-            background-color: rgb(100, 100, 100);
-        }
-        .dropdown{
-            float: left;
-        }
-        .dropdown .dropdown-button{
-            padding: 8px;
-            cursor: pointer;
-        }
-        .dropdown .dropdown-content{
-            position: absolute;
-            background-color: rgb(150, 150, 150);
-            display: none;
-        }
-        /* .dropdown-button:hover + .dropdown-content{
-            display: block;
-        } */
-        .dropdown:hover .dropdown-content{
-            display: block;
-        }
-        
-    </style>
+
+    <title>Animatom</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navegador-superior">
-        <ul>
-            <li><a href="">HTML</a></li>
-            <li>
-                <div class="dropdown">
-                    <div class="dropdown-button">
-                        CSS
+    <header id="cabecalho">
+        <nav class="navegador-superior">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            Assistidos
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="">Another</a></li>
+                                <li><a href="">Chobits</a></li>
+                                <li><a href="">Dragon Crisis</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li><a href="">Link 1</a></li>
-                            <li><a href="">Link 2</a></li>
-                            <li><a href="">Link 3</a></li>
-                        </ul>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            Acompanhando
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="">One Piece</a></li>
+                                <li><a href="">Fairy Tail</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li><a href="">JS</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        Conteúdo
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            Abandonados
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="">Death Note</a></li>
+                                <li><a href="">Gosick</a></li>
+                                <li><a href="">Inuyasha</a></li>
+                                <li><a href="">Naruto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <div class="dropdown-button">
+                            Começar
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="">Akame ga kill</a></li>
+                                <li><a href="">Soul Eater</a></li>
+                                <li><a href="">Bleach</a></li>
+                                <li><a href="">Sword Art Online</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <h1 id="titulo">Animatom</h1>
+    </header>
+    <div id="content">
+        <div id="aside">
+            <ul>
+                <li><a href="">Another</a></li>
+                <li><a href="">Chobits</a></li>
+                <li><a href="">Dragon Crisis</a></li>
+                <li><a href="">One Piece</a></li>
+                <li><a href="">Fairy Tail</a></li>
+                <li><a href="">Death Note</a></li>
+                <li><a href="">Gosick</a></li>
+                <li><a href="">Inuyasha</a></li>
+                <li><a href="">Naruto</a></li>
+                <li><a href="">Akame ga kill</a></li>
+                <li><a href="">Soul Eater</a></li>
+                <li><a href="">Bleach</a></li>
+                <li><a href="">Sword Art Online</a></li>
+            </ul>
+        </div>
+        <div id="corpo">
+            <img src="img/luffy.png" alt="">
+        </div>
+        <div id="infodireita">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Pellentesque mollis eget metus vel maximus. Nam
+                interdum bibendum nunc non consequat. Pellentesque
+                mollis ante mi, quis auctor ex venenatis a.
+                Pellentesque blandit massa sit amet ex accumsan
+                finibus. Suspendisse suscipit finibus ipsum, congue
+                iaculis dui scelerisque eget. Phasellus tempus massa
+                erat, nec finibus purus ultricies sit amet. Donec a
+                ultricies velit, a hendrerit ex. Maecenas auctor, dolor
+                id aliquet cursus, metus nisi feugiat nibh, ut elementum
+                tortor nisi ut arcu. Maecenas tincidunt eros velit, vel
+                hendrerit massa auctor a. In ut arcu quis tellus
+                convallis tincidunt ut quis libero. In commodo auctor
+                iaculis. Pellentesque ultricies id mauris quis laoreet.
+                Maecenas finibus pellentesque placerat. Cras ac est
+                sodales, euismod massa id, vulputate arcu.
+            </p>
+        </div>
     </div>
+    <footer id="rodape">
+        &copy; Todos os direitos reservados.
+    </footer>
 </body>
+
 </html>
