@@ -39,6 +39,10 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    color: rgb(131, 207, 241);
+}
+
 @font-face {
     font-family: hazel;
     src: url('font/hazel\ grace.ttf');

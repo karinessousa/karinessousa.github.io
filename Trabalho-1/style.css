@@ -42,16 +42,14 @@ body{
 }
 .dropdown .dropdown-content{
     position: absolute;
-    display: none;
+    max-height: 0%;
     background-color: rgb(219, 130, 185);
     overflow: hidden;
     transition: max-height 500ms linear;
 }
- .dropdown-button:hover + .dropdown-content{
-    display: block;
-}
+
 .dropdown:hover .dropdown-content{
-    display: block;
+    max-height: 500px;
 }
 
 #cabecalho{
