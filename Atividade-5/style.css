@@ -50,7 +50,7 @@ body {
 
 .acordeon .titulo-list{
     background: rgb(253, 177, 215);
-    border: #fff 2px solid;
+    border: rgb(248, 177, 177) 2px solid;
     padding: 0.5em;
     border-radius: 1em;
     user-select: none;
