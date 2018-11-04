@@ -12,7 +12,7 @@
     <body>
         <div class="menu-responsive">
             <button type="submit" class="sanduiche">&#9776;</button>
-            <header id="header">
+            <header class="header">
                 <div class="titulo">
                     Controle
                 </div>
@@ -25,20 +25,90 @@
             </header>
         </div>
 
+        <div class="acordeon">
+            <ul>
+                <li>
+                    <div class="titulo-list">Titulo 1</div>
+                    <div class="list">
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Ut lorem nisi, faucibus id 
+                        elit sed, pharetra dapibus mauris. Sed rutrum 
+                        risus tortor, ut convallis mi porta non. 
+                        Etiam tempus odio nunc, vel gravida ipsum 
+                        maximus nec. Vestibulum sit amet nibh ac 
+                        sapien venenatis cursus ut quis nunc. In nulla 
+                        libero, placerat sed elit pulvinar, lacinia 
+                        porta dolor. Fusce pretium eget justo id 
+                        eleifend. Mauris a lorem velit. Nullam mi mi, 
+                        rutrum sed blandit sit amet, maximus non tortor.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="titulo-list">Titulo 2</div>
+                    <div class="list">
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Ut lorem nisi, faucibus id 
+                        elit sed, pharetra dapibus mauris. Sed rutrum 
+                        risus tortor, ut convallis mi porta non. 
+                        Etiam tempus odio nunc, vel gravida ipsum 
+                        maximus nec. Vestibulum sit amet nibh ac 
+                        sapien venenatis cursus ut quis nunc. In nulla 
+                        libero, placerat sed elit pulvinar, lacinia 
+                        porta dolor. Fusce pretium eget justo id 
+                        eleifend. Mauris a lorem velit. Nullam mi mi, 
+                        rutrum sed blandit sit amet, maximus non tortor.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="titulo-list">Titulo 3</div>
+                    <div class="list">
+                        <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Ut lorem nisi, faucibus id 
+                        elit sed, pharetra dapibus mauris. Sed rutrum 
+                        risus tortor, ut convallis mi porta non. 
+                        Etiam tempus odio nunc, vel gravida ipsum 
+                        maximus nec. Vestibulum sit amet nibh ac 
+                        sapien venenatis cursus ut quis nunc. In nulla 
+                        libero, placerat sed elit pulvinar, lacinia 
+                        porta dolor. Fusce pretium eget justo id 
+                        eleifend. Mauris a lorem velit. Nullam mi mi, 
+                        rutrum sed blandit sit amet, maximus non tortor.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
         <script>
+            /*MENU*/
             let sanduba = document.querySelector(".sanduiche");
-            let menu = document.querySelector("#header");
+            let menu = document.querySelector(".header");
 
             sanduba.addEventListener("click", function(){
-                menu.style.maxWidth = "10em";
-                sanduba.style.transform = "translate(4.5em)";
+                menu.classList.toggle("menu-show");
+                sanduba.classList.toggle("sanduiche-desloc");
+            });
+            /*ACORDEON*/
+            let tituloList = document.querySelectorAll(".titulo-list");
+            let texto = document.querySelectorAll(".list");
 
-                sanduba.addEventListener("click", function(){
-                    menu.style.maxWidth = "0em";
-                    sanduba.style.transform = "translate(0em)";
-                })
-
-            })
+            function mostrarTexto(i){
+                tituloList[i].classList.toggle("titulo-aberto");
+                texto[i].classList.toggle("mostra-texto");
+                //percorre o vetor pra ele ver tudo o que não for i e remover
+                for(let j=0; j < tituloList.length; j++){
+                    if(j!=i){
+                        tituloList[j].classList.remove("titulo-aberto");
+                        texto[j].classList.remove("mostra-texto");
+                    }
+                }
+            }
+            //abre tudo o que for i
+            for(let i=0; i<tituloList.length; i++){
+                tituloList[i].addEventListener("click", function(){
+                    mostrarTexto(i);
+                });
+            }
+            
         </script>
         
     </body>
