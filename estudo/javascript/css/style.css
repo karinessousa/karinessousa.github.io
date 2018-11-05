@@ -1,0 +1,26 @@
+.testeClasse {
+    border:solid 1px black;
+    height:20px;
+}
+
+.testezao {
+    border: deeppink solid 10px;
+    height: 10px;
+}
+
+.imgem {
+    background: url("../img/logo.png");
+    height: 50px;
+}
+
+.imagem {
+    background: url("../img/logobranca.png")
+}
+
+.classeBonita {
+    background: pink;
+    border: 2px deeppink;
+    font-family: arial;
+    padding: 10px;
+    margin: 2em;
+}

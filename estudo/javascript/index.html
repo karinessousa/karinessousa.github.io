@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+    <button type="submit" class="botao">Trocar</button>
+    <button type="submit" class="botaoAdicionarCaixa">AdicionaCaixa</button>
+
+    <p id="teste">kakaka</p>
+    <div class="imgem""></div>
+    <!-- <div class="imgem" onclick="imagemMuda()"></div> -->
+    <div class="testeClasse"></div>
+
+    <div class="caixonaGrande">
+        <div class="classeBonita">tralala</div>
+    </div>
+
+    <script>
+
+/*TESTE PRIMÁRIO*/
+
+    document.getElementById("teste").innerHTML = "pacaca";
+
+/*TESTE TOGGLE*/
+
+    let botao = document.querySelector(".botao");
+    let imagem = document.querySelector(".imgem");
+
+    /*EVENT LISTENER*/
+    botao.addEventListener("click", function(){
+        imagem.classList.toggle("imagem");
+    })
+
+/*TESTE TROCA DE CSS PELA CLASSE*/
+
+    let classeTeste = document.querySelector(".testeClasse");
+    classeTeste.classList.add('testezao');
+
+/*TESTE EVENTOS*/
+
+    // function imagemMuda(){
+    //     imagem.classList.toggle("imagem");
+    // }
+
+/*NÓS*/
+
+    function adicionarCaixa(){
+        //criei a div e o texto que vai dentro
+        let caixa = document.createElement("div");
+        let textao = document.createTextNode("blablabla");
+        //juntei os dois
+        caixa.appendChild(textao);
+
+        //crio a caixonaGrande e chamo a nova pra dentro dela
+        caixona = document.querySelector(".caixonaGrande");
+        
+        caixa.classList.add("classeBonita");
+        //appendChild não usa aspas
+        caixona.appendChild(caixa);
+    }
+
+    let botaoCaixa = document.querySelector(".botaoAdicionarCaixa");
+    botaoCaixa.addEventListener("click", adicionarCaixa);
+
+    </script>
+</body>
+</html>
