@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            // Objeto JS
+            let o = {nome: "Victor",
+                    Sobrenome: "Farias",
+                    idade: 23,
+                    telefones: ["1927462823","2334836282","3234892362"]};
+            console.log(o.nome);
+            console.log(o.telefones);
+            for(let i=0; i<o.telefones.length; i++){
+                console.log(o.telefones[i]);
+            }
+            //String em formato JSON
+            let json = '{"nome":"Victor", "sobrenome":"Farias"}';
+            console.log(json);
+            let victor = JSON.parse(json);
+            console.log(victor);     
+            
+            // // Objeto JS -> string formato JSON
+            // let o_json = JSON.stringify(o);
+            // console.log(o_json);
+        </script>
+</body>
+</html>
