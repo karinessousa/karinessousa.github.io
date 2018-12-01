@@ -60,10 +60,12 @@ header .soft{
     width: 40px;
     border-radius: 20px;
     float: left;
+    cursor: pointer;
 }
 
 .top1 span{
     float: right;
+    cursor: pointer;
 }
 
 /* Titulo Grupo */
@@ -74,6 +76,41 @@ header .soft{
     overflow: hidden;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* grupos */
+
+.grupo{
+    background: rgb(188, 226, 251);
+    border-right: rgb(69, 117, 206) solid 2px;
+    border-bottom: #fff solid 0.5px;
+    width: 30%;
+    padding: 10px;
+    overflow: hidden;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.grupo .imgGrupo{
+    background: url(../img/grupo1.png);
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+/* mensagens */
+
+.mensages{
+    background: rgb(188, 226, 251);
+    height: 30em;
+    width: 70%;
+    float: right;
+    overflow: hidden;
 }
 
 @font-face {
