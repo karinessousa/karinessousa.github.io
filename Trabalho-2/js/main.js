@@ -7,11 +7,14 @@ function postGrupos(){
   
   xhttp.onreadystatechange = function(){
       if(xhttp.readyState==4){
-          console.log(xhttp.responseText);
+          console.log("entrou");
       }
   }
 
   xhttp.open("POST", url, true);
+  xhttp.onload = function () {
+    criarGrupo();
+  };
   xhttp.setRequestHeader("Content-type","application/json");
 
   let msg = [
@@ -89,7 +92,8 @@ function criarGrupo(){
       if(xhttp.readyState==4){
           let body_parsed = JSON.parse(xhttp.responseText);
           console.log(xhttp.responseText);
-          console.log(body_parsed[0]);
+          
+          console.log(body_parsed[0][1].grupo);
       }
   }
   xhttp.open("GET", url, true);
@@ -98,8 +102,8 @@ function criarGrupo(){
   //criando elementos
   let grupos = document.querySelector(".grupos");
 
-  let grupo = document.createElement("div");
-  grupo.classList.add("grupo");
+  let grupu = document.createElement("div");
+  grupu.classList.add("grupo");
 
   let imgGrupo = document.createElement("div");
   imgGrupo.classList.add("imgGrupo");
@@ -112,11 +116,11 @@ function criarGrupo(){
 
   tituloGrupo.appendChild(textoTeste);
 
-  grupo.appendChild(imgGrupo);
-  grupo.appendChild(tituloGrupo);
-  grupos.appendChild(grupo);
+  grupu.appendChild(imgGrupo);
+  grupu.appendChild(tituloGrupo);
+  grupos.appendChild(grupu);
+
+  console.log(grupos);
 }
 
 postGrupos();
-getGrupos();
-criarGrupo();
