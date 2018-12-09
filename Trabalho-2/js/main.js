@@ -114,6 +114,11 @@ function criarGrupo(){
             grupos.appendChild(grupu);
           }
 
+          function tituloConversa(nome){
+            let top2 = document.querySelector(".top2");        
+            top2.innerHTML = nome;
+          }
+
           let infoGrupo = JSON.parse(xhttp.responseText);
           let grupo0 = infoGrupo[0][0].grupo;
           let grupo1 = infoGrupo[0][1].grupo;
@@ -121,6 +126,17 @@ function criarGrupo(){
           nomeGrupo(grupo0);
           nomeGrupo(grupo1);
           nomeGrupo(grupo2);
+
+          let todosGrupos = document.querySelectorAll(".grupo");
+          for(let i = 0; i<todosGrupos.length; i++){
+            todosGrupos[i].addEventListener("click", function(){
+              tituloConversa(todosGrupos[i].textContent);
+            });
+          }
+
+          tituloConversa(grupo0);
+
+
 
       }
   }
