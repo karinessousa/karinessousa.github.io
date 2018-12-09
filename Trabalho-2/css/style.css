@@ -113,6 +113,23 @@ header .soft{
     overflow: hidden;
 }
 
+.containerMsg{
+    background: white;
+    margin: 20px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+
+.containerMsg .userMsg{
+    background: ghostwhite;
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.containerMsg .msg{
+    padding: 10px;
+}
+
 @font-face {
     font-family:cocogoose;
     src: url("../font/Cocogoose\ Pro-trial.ttf")

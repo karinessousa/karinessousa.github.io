@@ -119,6 +119,30 @@ function criarGrupo(){
             top2.innerHTML = nome;
           }
 
+          function mensagens(nome,texto){
+            let mensages = document.querySelector(".mensages");
+        
+            let container = document.createElement("div");
+            container.classList.add("containerMsg");
+        
+            let usuario = document.createElement("div");
+            usuario.classList.add("userMsg");
+            
+            let msgUser = document.createElement("div");
+            msgUser.classList.add("msg");
+        
+            // juntando elementos
+            let tituloUser = document.createTextNode(nome);
+            let tituloTexto = document.createTextNode(texto);
+        
+            usuario.appendChild(tituloUser);
+            msgUser.appendChild(tituloTexto);
+        
+            container.appendChild(usuario);
+            container.appendChild(msgUser);
+            mensages.appendChild(container);
+          }
+
           let infoGrupo = JSON.parse(xhttp.responseText);
           let grupo0 = infoGrupo[0][0].grupo;
           let grupo1 = infoGrupo[0][1].grupo;
@@ -131,13 +155,20 @@ function criarGrupo(){
           for(let i = 0; i<todosGrupos.length; i++){
             todosGrupos[i].addEventListener("click", function(){
               tituloConversa(todosGrupos[i].textContent);
+
+              let mensages = document.querySelector(".mensages");
+              mensages.innerHTML = "";
+
+              for(let j = 0; j<infoGrupo[0][i].mensagens.length; j++){
+                mensagens(infoGrupo[0][i].mensagens[j].usuario,infoGrupo[0][i].mensagens[j].texto);
+              }
             });
           }
 
-          tituloConversa(grupo0);
+          let testeMensagem = infoGrupo[0][0].mensagens[0].usuario;
+          console.log(testeMensagem);
 
-
-
+          tituloConversa("Kau Message");
       }
   }
   xhttp.open("GET", url, true);
