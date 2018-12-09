@@ -120,7 +120,7 @@ function criarGrupo(){
           }
 
           function mensagens(nome,texto){
-            let mensages = document.querySelector(".mensages");
+            let mensages = document.querySelector(".todasMsg");
         
             let container = document.createElement("div");
             container.classList.add("containerMsg");
@@ -143,20 +143,30 @@ function criarGrupo(){
             mensages.appendChild(container);
           }
 
+          //RENDERIZAR NOME E MENSAGENS DO GRUPO
+
           let infoGrupo = JSON.parse(xhttp.responseText);
-          let grupo0 = infoGrupo[0][0].grupo;
-          let grupo1 = infoGrupo[0][1].grupo;
-          let grupo2 = infoGrupo[0][2].grupo;
-          nomeGrupo(grupo0);
-          nomeGrupo(grupo1);
-          nomeGrupo(grupo2);
+
+          for(let p = 0; p < infoGrupo[0].length; p++){
+            let grupo0 = infoGrupo[0][p].grupo;
+            nomeGrupo(grupo0);
+            console.log(infoGrupo[0][p].grupo);
+          }
+
+          // let grupo0 = infoGrupo[0][0].grupo;
+          // let grupo1 = infoGrupo[0][1].grupo;
+          // let grupo2 = infoGrupo[0][2].grupo;
+          // nomeGrupo(grupo0);
+          // nomeGrupo(grupo1);
+          // nomeGrupo(grupo2);
 
           let todosGrupos = document.querySelectorAll(".grupo");
+          console.log(todosGrupos);
           for(let i = 0; i<todosGrupos.length; i++){
             todosGrupos[i].addEventListener("click", function(){
               tituloConversa(todosGrupos[i].textContent);
 
-              let mensages = document.querySelector(".mensages");
+              let mensages = document.querySelector(".todasMsg");
               mensages.innerHTML = "";
 
               for(let j = 0; j<infoGrupo[0][i].mensagens.length; j++){

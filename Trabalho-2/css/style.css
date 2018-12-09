@@ -7,6 +7,8 @@
 body{
     width: 900px;
     margin: auto;
+    box-shadow: 0px 0px 10px rgb(61, 61, 61);
+    height: 100vh;
     background: rgb(230, 242, 253);
 }
 
@@ -111,6 +113,16 @@ header .soft{
     width: 70%;
     float: right;
     overflow: hidden;
+}
+
+.todasMsg {
+    height: 75%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.inputMensage {
+    height: 25%;
+    background: white;
 }
 
 .containerMsg{
