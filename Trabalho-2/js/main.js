@@ -143,7 +143,7 @@ function criarGrupo(){
             mensages.appendChild(container);
           }
 
-          //RENDERIZAR NOME E MENSAGENS DO GRUPO
+          //RENDERIZAR TODOS OS GRUPOS
 
           let infoGrupo = JSON.parse(xhttp.responseText);
 
@@ -153,15 +153,8 @@ function criarGrupo(){
             console.log(infoGrupo[0][p].grupo);
           }
 
-          // let grupo0 = infoGrupo[0][0].grupo;
-          // let grupo1 = infoGrupo[0][1].grupo;
-          // let grupo2 = infoGrupo[0][2].grupo;
-          // nomeGrupo(grupo0);
-          // nomeGrupo(grupo1);
-          // nomeGrupo(grupo2);
-
+          //RENDERIZAR NOME E MENSAGENS DO GRUPO
           let todosGrupos = document.querySelectorAll(".grupo");
-          console.log(todosGrupos);
           for(let i = 0; i<todosGrupos.length; i++){
             todosGrupos[i].addEventListener("click", function(){
               tituloConversa(todosGrupos[i].textContent);
@@ -185,4 +178,19 @@ function criarGrupo(){
   xhttp.send();
 }
 
-postGrupos();
+function login(){
+  let entrar = document.querySelector(".entrarLogin");
+
+  entrar.addEventListener('keyup', function(e){
+    var key = e.which || e.keyCode;
+    if (key == 13) { // codigo da tecla enter
+      // colocas aqui a tua função a rodar
+      alert('carregou enter o valor digitado foi: ' +this.value);
+    }
+  });
+
+  console.log(entrar);
+}
+
+login();
+// postGrupos();

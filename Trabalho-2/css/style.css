@@ -142,6 +142,41 @@ header .soft{
     padding: 10px;
 }
 
+/* MODAL ENTRAR */
+
+.modalEntrar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.658);
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.modalEntrar .entrar {
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 0 0 10px #abc;;
+    background: #fff;
+    padding: 3%;
+}
+
+.entrar .login{
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.entrar .entrarLogin {
+    border-radius: 20px;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
 @font-face {
     font-family:cocogoose;
     src: url("../font/Cocogoose\ Pro-trial.ttf")
